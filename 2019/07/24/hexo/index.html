@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link rel="stylesheet" href="/css/materialize.min.css">
+  <link rel="stylesheet" href="/css/ghpages-materialize.css">
+  
 
   <!--Let browser know website is optimized for mobile-->
   
@@ -19,7 +21,7 @@
     <div class="row"> 
       <div class="col l2">
       <!-- 메뉴화면 -->
-<ul class="sidenav sidenav-fixed">
+<ul id="slide-out" class="sidenav sidenav-fixed">
   <li class="center-align">
   <img src="/images/com.jpg">
   </li>
@@ -29,7 +31,7 @@
       <label for="search_text">검색어를 입력하세요.</label>
     </div>
     <div class="col s2 ">
-      <a class="btn-floating cyan pulse"><i class="small material-icons">search</i></a>
+      <i class="material-icons">search</i>
     </div>
   </li>
   
@@ -40,9 +42,14 @@
 </ul>
       </div>
       <div class="col s12 m12 l10">
-        <div class="row grid-iron align-center">
-          <div class="col offset-l2 l10 offset-s8 s4">
-  <h4>개발 블로그</h4>
+        <div class="row grid-iron">
+          <div class="container">
+  <a href="#" data-target="slide-out" class="top-nav sidenav-trigger hide-on-large-only">
+    <i class="material-icons">menu</i>
+  </a>
+  <div class="col s12 m8 offset-m1 xl7 offset-xl1 center-on-small-only">
+    <h4>개발 블로그</h4>
+  </div>
 </div>
 
 
@@ -51,15 +58,17 @@
           <!-- content -->
           <div class ="row">
           <div>
-  <h1 id="Hexo-빠르고-간단하고-강력한-블로그-프레임워크"><a href="#Hexo-빠르고-간단하고-강력한-블로그-프레임워크" class="headerlink" title="Hexo 빠르고 간단하고 강력한 블로그 프레임워크"></a>Hexo 빠르고 간단하고 강력한 블로그 프레임워크</h1><p>블로그 제작을 도와주는 Nodejs 기반 블로그 프레임워크 Hexo를 소개합니다.</p>
-<h2 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h2><p><strong>사전준비사항 Github Pages 사용시</strong></p>
+  <h1 id="hexo-빠르고-간단하고-강력한-블로그-프레임워크"><a class="markdownIt-Anchor" href="#hexo-빠르고-간단하고-강력한-블로그-프레임워크"></a> Hexo 빠르고 간단하고 강력한 블로그 프레임워크</h1>
+<p>블로그 제작을 도와주는 Nodejs 기반 블로그 프레임워크 Hexo를 소개합니다.</p>
+<h2 id="설치"><a class="markdownIt-Anchor" href="#설치"></a> 설치</h2>
+<p><strong>사전준비사항 Github Pages 사용시</strong></p>
 <ol>
 <li><a href="https://github.com/" target="_blank" rel="noopener">github</a> 계정생성</li>
 <li><a href="https://git-scm.com/" target="_blank" rel="noopener">git</a> 설치</li>
 <li>터미널 (terminal) 사용 ( 윈도우 : Git BASH 추천 | Mac : 터미널 )  <strong>개인추천 | Mac : iTerm2</strong></li>
 <li>코드 에디터 (Code Editer) <strong>개인추천 | Window || Mac VScode(Visual Studio Code)</strong></li>
 <li>Window 명령어 , [Linux / Unix] 명령어 <strong>개인추천 | Git BASH 사용시 Linux / Unix 명령어 사용가능</strong></li>
-<li>Node.js 설치 </li>
+<li>Node.js 설치</li>
 <li>npm 명령어 숙지</li>
 <li>마크다운 문법 숙지 (Markdown | .md 파일)</li>
 </ol>
@@ -67,18 +76,16 @@
 <li>cli 기반으로 진행된다. (command line interface)</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g </span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>정상 실행결과</li>
 </ul>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
-
 <ul>
-<li>브라우저에서 확인 </li>
+<li>브라우저에서 확인</li>
 </ul>
 <p><a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p>
-<h2 id="기본-디렉토리-구조"><a href="#기본-디렉토리-구조" class="headerlink" title="기본 디렉토리 구조"></a>기본 디렉토리 구조</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules              # node 모듈 npm으로 설치한 모듈 집합 디렉토리 </span><br><span class="line">├── scaffolds                 # 뼈대 포스트들의 기본 구조가 작성된 디렉토리</span><br><span class="line">|   ├── draft.md              # 초안 구조 md 파일</span><br><span class="line">|   ├── page.md               # 페이지 구조 md 파일</span><br><span class="line">|   └── post.md               # 포스트 구조 md 파일</span><br><span class="line">├── source                    # 여기에 작성된 소스들이 랜더링되어서 화면에 보여준다.</span><br><span class="line">|   └── _posts                # 포스트 집합 디렉토리</span><br><span class="line">|       └── hello-world.md    # 맨처음 생기는 첫 hello-world 포스트 md 파일</span><br><span class="line">├── themes                    # 블로그를 테마 집합 디텍토리</span><br><span class="line">|   └── landscape             # 처음 제공하는 기본 테마</span><br><span class="line">├── _config.yml               # 제일중요! 모든 설정을 _config.yml 에서 작성한다.</span><br><span class="line">├── .gitignore                # git 형상관리 제외 목록 </span><br><span class="line">├── package.json              # hexo에 사용되는 npm package (의존성 목록) 작성된 파일</span><br><span class="line">└── yarn.lock                 # yarn (javascript 패키지 매니저)</span><br></pre></td></tr></table></figure>
-
+<h2 id="기본-디렉토리-구조"><a class="markdownIt-Anchor" href="#기본-디렉토리-구조"></a> 기본 디렉토리 구조</h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules              # node 모듈 npm으로 설치한 모듈 집합 디렉토리 </span><br><span class="line">├── scaffolds                 # 뼈대 포스트들의 기본 구조가 작성된 디렉토리</span><br><span class="line">|   ├── draft.md              # 초안 구조 md 파일</span><br><span class="line">|   ├── page.md               # 페이지 구조 md 파일</span><br><span class="line">|   └── post.md               # 포스트 구조 md 파일</span><br><span class="line">├── source                    # 여기에 작성된 소스들이 랜더링되어서 화면에 보여준다.</span><br><span class="line">|   └── _posts                # 포스트 집합 디렉토리</span><br><span class="line">|       └── hello-world.md    # 맨처음 생기는 첫 hello-world 포스트 md 파일</span><br><span class="line">├── themes                    # 블로그를 테마 집합 디텍토리</span><br><span class="line">|   └── landscape             # 처음 제공하는 기본 테마</span><br><span class="line">├── _config.yml               # 제일중요! 모든 설정을 _config.yml 에서 작성한다.</span><br><span class="line">├── .gitignore                # git 형상관리 제외 목록 </span><br><span class="line">├── package.json              # hexo에 사용되는 npm package (의존성 목록) 작성된 파일</span><br><span class="line">└── yarn.lock                 # yarn (javascript 패키지 매니저)</span><br></pre></td></tr></table></figure>
 <ul>
 <li>장점</li>
 </ul>
@@ -89,7 +96,7 @@
 <li>많은 플러그인들이 제공된다.</li>
 </ol>
 <ul>
-<li>단점 </li>
+<li>단점</li>
 </ul>
 <ol>
 <li>여기서 제공하는 구조를 따라야 한다. ( 어떤 프레임워크든 마찬가지겠지만 그래야 동작이나 새로운 플러그인 추가시 장애가 없다.)</li>
@@ -100,7 +107,8 @@
           <!--footer-->
           <div class ="row">
           <script src="/js/materialize.min.js"></script>
-<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="/js/algoliasearch.min.js"></script>
+
           </div>
         </div>
       </div>

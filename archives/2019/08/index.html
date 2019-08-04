@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link rel="stylesheet" href="/css/materialize.min.css">
+  <link rel="stylesheet" href="/css/ghpages-materialize.css">
+  
 
   <!--Let browser know website is optimized for mobile-->
   
@@ -19,7 +21,7 @@
     <div class="row"> 
       <div class="col l2">
       <!-- 메뉴화면 -->
-<ul class="sidenav sidenav-fixed">
+<ul id="slide-out" class="sidenav sidenav-fixed">
   <li class="center-align">
   <img src="/images/com.jpg">
   </li>
@@ -29,7 +31,7 @@
       <label for="search_text">검색어를 입력하세요.</label>
     </div>
     <div class="col s2 ">
-      <a class="btn-floating cyan pulse"><i class="small material-icons">search</i></a>
+      <i class="material-icons">search</i>
     </div>
   </li>
   
@@ -40,9 +42,14 @@
 </ul>
       </div>
       <div class="col s12 m12 l10">
-        <div class="row grid-iron align-center">
-          <div class="col offset-l2 l10 offset-s8 s4">
-  <h4>개발 블로그</h4>
+        <div class="row grid-iron">
+          <div class="container">
+  <a href="#" data-target="slide-out" class="top-nav sidenav-trigger hide-on-large-only">
+    <i class="material-icons">menu</i>
+  </a>
+  <div class="col s12 m8 offset-m1 xl7 offset-xl1 center-on-small-only">
+    <h4>개발 블로그</h4>
+  </div>
 </div>
 
 
@@ -54,7 +61,22 @@
 <div class="col s12 m4" style="padding: 0px 4px 0px 4px">
   <div class="card small">
     <div class="card-image">
-      <img src="https://picsum.photos/id/108/441/180">
+      <img src="https://picsum.photos/id/53/441/180">
+      <span class="card-title">materializecss</span>
+    </div>
+    <div class="card-content">
+      <p>2019-08-04</p>
+    </div>
+    <div class="card-action">
+      <a href="/2019/08/04/materializecss/">더보기</a>
+    </div>
+  </div>
+</div>
+
+<div class="col s12 m4" style="padding: 0px 4px 0px 4px">
+  <div class="card small">
+    <div class="card-image">
+      <img src="https://picsum.photos/id/42/441/180">
       <span class="card-title">hexo-algoliasearch</span>
     </div>
     <div class="card-content">
@@ -69,7 +91,7 @@
 <div class="col s12 m4" style="padding: 0px 4px 0px 4px">
   <div class="card small">
     <div class="card-image">
-      <img src="https://picsum.photos/id/111/441/180">
+      <img src="https://picsum.photos/id/70/441/180">
       <span class="card-title">hexo-generator-feed</span>
     </div>
     <div class="card-content">
@@ -84,7 +106,7 @@
 <div class="col s12 m4" style="padding: 0px 4px 0px 4px">
   <div class="card small">
     <div class="card-image">
-      <img src="https://picsum.photos/id/74/441/180">
+      <img src="https://picsum.photos/id/91/441/180">
       <span class="card-title">hexo-deployer-git</span>
     </div>
     <div class="card-content">
@@ -100,7 +122,8 @@
           <!--footer-->
           <div class ="row">
           <script src="/js/materialize.min.js"></script>
-<script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+<script src="/js/algoliasearch.min.js"></script>
+
           </div>
         </div>
       </div>
