@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>개발 블로그</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://pcm9881.github.io/"/>
+  <updated>2019-08-04T03:32:51.063Z</updated>
+  <id>https://pcm9881.github.io/</id>
+  
+  <author>
+    <name>pcm9881</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo-algoliasearch</title>
+    <link href="https://pcm9881.github.io/2019/08/04/hexo-algoliasearch/"/>
+    <id>https://pcm9881.github.io/2019/08/04/hexo-algoliasearch/</id>
+    <published>2019-08-04T03:32:25.000Z</published>
+    <updated>2019-08-04T03:32:51.063Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo-검색"><a href="#Hexo-검색" class="headerlink" title="Hexo 검색"></a>Hexo 검색</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-algoliasearch --save</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Hexo-검색&quot;&gt;&lt;a href=&quot;#Hexo-검색&quot; class=&quot;headerlink&quot; title=&quot;Hexo 검색&quot;&gt;&lt;/a&gt;Hexo 검색&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo-generator-feed</title>
+    <link href="https://pcm9881.github.io/2019/08/04/hexo-generator-feed/"/>
+    <id>https://pcm9881.github.io/2019/08/04/hexo-generator-feed/</id>
+    <published>2019-08-04T02:31:54.000Z</published>
+    <updated>2019-08-04T03:38:18.553Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo-RSS-feed"><a href="#Hexo-RSS-feed" class="headerlink" title="Hexo RSS feed"></a>Hexo RSS feed</h1><p>블로그 최신 포스트들에 대한 정보를 제공하기 위해 특정 파일을 만들어주는 기능. </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="noopener">https://github.com/hexojs/hexo-generator-feed</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Hexo-RSS-feed&quot;&gt;&lt;a href=&quot;#Hexo-RSS-feed&quot; class=&quot;headerlink&quot; title=&quot;Hexo RSS feed&quot;&gt;&lt;/a&gt;Hexo RSS feed&lt;/h1&gt;&lt;p&gt;블로그 최신 포스트들에 대한 정보를 제공하기 위
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="https://pcm9881.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo-deployer-git</title>
+    <link href="https://pcm9881.github.io/2019/08/02/hexo-deployer-git/"/>
+    <id>https://pcm9881.github.io/2019/08/02/hexo-deployer-git/</id>
+    <published>2019-08-02T09:48:07.000Z</published>
+    <updated>2019-08-04T02:59:03.749Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo-Git-배포"><a href="#Hexo-Git-배포" class="headerlink" title="Hexo Git 배포"></a>Hexo Git 배포</h1><h2 id="npm-배포-모듈-설치"><a href="#npm-배포-모듈-설치" class="headerlink" title="npm 배포 모듈 설치"></a>npm 배포 모듈 설치</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><h2 id="config-yml-Git-설정"><a href="#config-yml-Git-설정" class="headerlink" title="_config.yml Git 설정"></a>_config.yml Git 설정</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/깃계정/레파지토리.git</span><br><span class="line">  branch: master</span><br><span class="line">  message:</span><br></pre></td></tr></table></figure><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Hexo-Git-배포&quot;&gt;&lt;a href=&quot;#Hexo-Git-배포&quot; class=&quot;headerlink&quot; title=&quot;Hexo Git 배포&quot;&gt;&lt;/a&gt;Hexo Git 배포&lt;/h1&gt;&lt;h2 id=&quot;npm-배포-모듈-설치&quot;&gt;&lt;a href=&quot;#npm-배
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="https://pcm9881.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo-themes</title>
+    <link href="https://pcm9881.github.io/2019/07/25/hexo-themes/"/>
+    <id>https://pcm9881.github.io/2019/07/25/hexo-themes/</id>
+    <published>2019-07-25T07:16:43.000Z</published>
+    <updated>2019-08-04T02:59:32.860Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo-테마-적용"><a href="#Hexo-테마-적용" class="headerlink" title="Hexo 테마 적용"></a>Hexo 테마 적용</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/viosey/hexo-theme-material.git material</span><br><span class="line"><span class="built_in">cd</span> material</span><br></pre></td></tr></table></figure><h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p><a href="http://www.codeblocq.com/2016/03/Create-an-Hexo-Theme-Part-1-Index/" target="_blank" rel="noopener">http://www.codeblocq.com/2016/03/Create-an-Hexo-Theme-Part-1-Index/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Hexo-테마-적용&quot;&gt;&lt;a href=&quot;#Hexo-테마-적용&quot; class=&quot;headerlink&quot; title=&quot;Hexo 테마 적용&quot;&gt;&lt;/a&gt;Hexo 테마 적용&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="https://pcm9881.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo</title>
+    <link href="https://pcm9881.github.io/2019/07/24/hexo/"/>
+    <id>https://pcm9881.github.io/2019/07/24/hexo/</id>
+    <published>2019-07-24T09:37:35.000Z</published>
+    <updated>2019-08-04T03:04:45.706Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Hexo-빠르고-간단하고-강력한-블로그-프레임워크"><a href="#Hexo-빠르고-간단하고-강력한-블로그-프레임워크" class="headerlink" title="Hexo 빠르고 간단하고 강력한 블로그 프레임워크"></a>Hexo 빠르고 간단하고 강력한 블로그 프레임워크</h1><p>블로그 제작을 도와주는 Nodejs 기반 블로그 프레임워크 Hexo를 소개합니다.</p><h2 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h2><p><strong>사전준비사항 Github Pages 사용시</strong></p><ol><li><a href="https://github.com/" target="_blank" rel="noopener">github</a> 계정생성</li><li><a href="https://git-scm.com/" target="_blank" rel="noopener">git</a> 설치</li><li>터미널 (terminal) 사용 ( 윈도우 : Git BASH 추천 | Mac : 터미널 )  <strong>개인추천 | Mac : iTerm2</strong></li><li>코드 에디터 (Code Editer) <strong>개인추천 | Window || Mac VScode(Visual Studio Code)</strong></li><li>Window 명령어 , [Linux / Unix] 명령어 <strong>개인추천 | Git BASH 사용시 Linux / Unix 명령어 사용가능</strong></li><li>Node.js 설치 </li><li>npm 명령어 숙지</li><li>마크다운 문법 숙지 (Markdown | .md 파일)</li></ol><ul><li>cli 기반으로 진행된다. (command line interface)</li></ul><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g </span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure><ul><li>정상 실행결과</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure><ul><li>브라우저에서 확인 </li></ul><p><a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a></p><h2 id="기본-디렉토리-구조"><a href="#기본-디렉토리-구조" class="headerlink" title="기본 디렉토리 구조"></a>기본 디렉토리 구조</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── node_modules              # node 모듈 npm으로 설치한 모듈 집합 디렉토리 </span><br><span class="line">├── scaffolds                 # 뼈대 포스트들의 기본 구조가 작성된 디렉토리</span><br><span class="line">|   ├── draft.md              # 초안 구조 md 파일</span><br><span class="line">|   ├── page.md               # 페이지 구조 md 파일</span><br><span class="line">|   └── post.md               # 포스트 구조 md 파일</span><br><span class="line">├── source                    # 여기에 작성된 소스들이 랜더링되어서 화면에 보여준다.</span><br><span class="line">|   └── _posts                # 포스트 집합 디렉토리</span><br><span class="line">|       └── hello-world.md    # 맨처음 생기는 첫 hello-world 포스트 md 파일</span><br><span class="line">├── themes                    # 블로그를 테마 집합 디텍토리</span><br><span class="line">|   └── landscape             # 처음 제공하는 기본 테마</span><br><span class="line">├── _config.yml               # 제일중요! 모든 설정을 _config.yml 에서 작성한다.</span><br><span class="line">├── .gitignore                # git 형상관리 제외 목록 </span><br><span class="line">├── package.json              # hexo에 사용되는 npm package (의존성 목록) 작성된 파일</span><br><span class="line">└── yarn.lock                 # yarn (javascript 패키지 매니저)</span><br></pre></td></tr></table></figure><ul><li>장점</li></ul><ol><li>편하다.</li><li>빠르다.</li><li>배포가 쉽다.</li><li>많은 플러그인들이 제공된다.</li></ol><ul><li>단점 </li></ul><ol><li>여기서 제공하는 구조를 따라야 한다. ( 어떤 프레임워크든 마찬가지겠지만 그래야 동작이나 새로운 플러그인 추가시 장애가 없다.)</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Hexo-빠르고-간단하고-강력한-블로그-프레임워크&quot;&gt;&lt;a href=&quot;#Hexo-빠르고-간단하고-강력한-블로그-프레임워크&quot; class=&quot;headerlink&quot; title=&quot;Hexo 빠르고 간단하고 강력한 블로그 프레임워크&quot;&gt;&lt;/a&gt;Hexo 
+      
+    
+    </summary>
+    
+    
+      <category term="hexo" scheme="https://pcm9881.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>
